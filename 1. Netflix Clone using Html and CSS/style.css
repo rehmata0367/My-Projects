@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("Assets/images/bg.jpg");
+  height: 90vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1500px, 100vw);
+}
+.box {
+  height: 90vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+}
+nav {
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  max-width: 50vw;
+  align-items: center;
+  height: 74px;
+}
+nav img {
+  width: 112px;
+  color: red;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 1;
+}
+.hero {
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-family: sans-serif;
+  gap: 15px;
+}
+.hero > :nth-child(1) {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.hero :nth-child(2) {
+  font-weight: 400;
+  font-size: 25px;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+}
+.separation {
+  height: 5px;
+  background-color: rgb(51, 51, 51);
+}
+.btn-log {
+  background-color: red;
+  padding: 4px;
+  font-weight: bolder;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+.btn-eng {
+  background-color: rgba(23, 23, 23, 0.2);
+  padding: 8px 18px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid grey;
+  cursor: pointer;
+  margin: 10px;
+}
+.btn-red {
+  color: white;
+  background-color: red;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  color: white;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 634px) {
+  .first {
+    flex-wrap: wrap;
+  }
+}
+.secimage {
+  position: relative;
+}
+.secimage img {
+  width: 553px;
+  position: relative;
+  z-index: 10;
+}
+.secimage video {
+  position: absolute;
+  top: 75px;
+  width: 429px;
+  right: 4vw;
+}
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+section.first > div :nth-child(2) {
+  font-size: 22px;
+}
+.separation {
+  height: 5px;
+  background-color: rgb(51, 51, 51);
+}
+.faq h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+}
+.faq {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.faqbox:hover {
+  background-color: red;
+}
+.faqbox {
+  display: flex;
+  color: white;
+  background-color: #2d2d2d;
+  max-width: 40vw;
+  padding: 20px;
+  margin: 8px auto;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all ease-out;
+  font-size: 22px;
+}
+.secmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+footer .question {
+  padding: 34px 0;
+}
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .secImg img {
+    width: 305px;
+  }
+
+  .secImg video {
+    width: 305px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  footer {
+    max-width: 90vw;
+    padding: 75px 0;
+  }
+
+  .footer-item {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
